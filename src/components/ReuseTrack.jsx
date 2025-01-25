@@ -7,20 +7,20 @@ const ReuseTrack = () => {
   const [points, setPoints] = useState(0);
   const [achievements, setAchievements] = useState([]);
 
-  // Achievement milestones
+  
   const milestones = [
     { cups: 5, achievement: "Reusable Hero 🌟" },
     { cups: 10, achievement: "Eco-Warrior 🏆" },
     { cups: 20, achievement: "Sustainability Champion 🌍" },
   ];
 
-  // Function to handle cup logging
+  
   const logReusableCup = () => {
     const newCount = reusableCups + 1;
     setReusableCups(newCount);
     setPoints(points + 10); // Add 10 points per reusable cup
 
-    // Check for new achievements
+    
     milestones.forEach((milestone) => {
       if (newCount === milestone.cups && !achievements.includes(milestone.achievement)) {
         setAchievements([...achievements, milestone.achievement]);
@@ -42,7 +42,7 @@ const ReuseTrack = () => {
       <h1 style={{ color: "#1E2A5E", fontSize: "45px"}}><u>Reusability Tracker</u> 📈</h1>
       <p><h2>Track your reusable cup usage and earn points & achievements!</h2></p>
 
-      {/* Display Stats */}
+      
       <div
         style={{
           margin: "20px 0",
@@ -61,7 +61,7 @@ const ReuseTrack = () => {
         </p>
       </div>
 
-      {/* Button to Log Usage */}
+      
       <button
         onClick={logReusableCup}
         style={{
@@ -77,7 +77,7 @@ const ReuseTrack = () => {
         Log a Reusable Cup
       </button>
 
-      {/* Achievements Section */}
+      
       <div
         style={{
           marginTop: "20px",
@@ -101,7 +101,7 @@ const ReuseTrack = () => {
         )}
       </div>
 
-      {/* Back to Home Button */}
+      
       <div style={{ marginTop: "20px" }}>
         <button
           onClick={() => navigate("/")}

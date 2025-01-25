@@ -16,7 +16,7 @@ const GetStarted = () => {
       <h1 style={{ color: "#493628" ,fontSize: "45px" }}><u>Get Started with Cupcut </u>🚀</h1>
       <p><h2>Explore activities to reduce paper cup usage and promote sustainability.</h2></p>
 
-      {/* Descriptions Section */}
+      
       <div
         style={{
           textAlign: "left",
@@ -33,28 +33,28 @@ const GetStarted = () => {
           Our activities are designed to help you make a difference by reducing paper cup waste and embracing sustainability. Here's how you can contribute:
         </p>
 
-        {/* Description for Impact Calculator */}
+        
         <h3 style={{ color: "#F05A7E" }}><i>1. Impact Calculator</i></h3>
         <p>
           Calculate how your daily paper cup usage contributes to waste. Discover the environmental impact (like trees cut and energy consumed) and get suggestions for reusable alternatives like mugs or thermoses.
         </p>
 
-        {/* Description for Reusability Tracker */}
+        
         <h3 style={{ color: "#629584" }}><i>2. Reusability Tracker</i></h3>
         <p>
           Log your reusable cup usage and earn points or achievements for every eco-friendly choice you make. Track your progress and inspire others to join you!
         </p>
 
-        {/* Description for Sustainability Pledge */}
+        
         <h3 style={{ color: "#8D77AB" }}><i>3. Sustainability Pledge</i></h3>
         <p>
           Take a pledge to reduce your paper cup usage by adopting reusable alternatives. Choose from options like carrying your own cup or avoiding single-use cups, and receive a digital badge or certificate for your commitment.
         </p>
       </div>
 
-      {/* Buttons Section */}
+      
       <div style={{ marginTop: "30px" }}>
-        {/* Impact Calculator Button */}
+        
         <button
           onClick={() => navigate("/calc")}
           style={{
@@ -70,7 +70,7 @@ const GetStarted = () => {
           Impact Calculator
         </button>
 
-        {/* Reusability Tracker Button */}
+        
         <button
           onClick={() => navigate("/reusetrack")}
           style={{
@@ -86,7 +86,7 @@ const GetStarted = () => {
           Reusability Tracker
         </button>
 
-        {/* Sustainability Pledge Button */}
+        
         <button
           onClick={() => navigate("/pledge")}
           style={{
@@ -102,7 +102,7 @@ const GetStarted = () => {
           Sustainability Pledge
         </button>
       </div>
-      {/* Back to Home Button */}
+      
       <div style={{ marginTop: "20px" }}>
         <button
           onClick={() => navigate("/")}

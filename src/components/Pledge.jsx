@@ -148,7 +148,7 @@ const Pledge = () => {
         
       )}
 
-      {/* Back to Home Button */}
+      
       <div style={{ marginTop: "20px" }}>
         <button
           onClick={() => navigate("/")}

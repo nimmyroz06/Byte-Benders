@@ -15,7 +15,7 @@ const Navbar = () => {
         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
       }}
     >
-      {/* Logo Section */}
+      
       <div>
         <h2 style={{ margin: "0", fontSize: "30px" }}>
           <Link
@@ -30,7 +30,7 @@ const Navbar = () => {
         </h2>
       </div>
 
-      {/* Navigation Links */}
+      
       <div>
         <ul
           style={{
